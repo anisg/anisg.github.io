@@ -1,6 +1,4 @@
 hello world <div id="k"></div>
 <script>
-var currentUrl = document.referrer;
-console.log('got',currentUrl);
-let el = document.getElementById("k"); el.innerHTML = currentUrl;
+console.log('go2',(window.location != window.parent.location), document.referrer, document.location.href);
 </script>
