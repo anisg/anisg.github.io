@@ -1,4 +1,12 @@
 hello world <div id="k"></div>
 <script>
 console.log('go2',(window.location != window.parent.location), document.referrer, document.location.href);
+async function ok(){
+	const x = await localStorage.get('k');
+	console.log('k',x);
+	if (!x)
+		localStorage.set('K',`${Math.random()}`);
+}
+ok();
+
 </script>
